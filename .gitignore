@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+
+united-drugs/venv/
+united-drugs/__pycache__/
+united-drugs/build/
+united-drugs/dist/
+united-drugs/database.db
+united-drugs/invoices/
