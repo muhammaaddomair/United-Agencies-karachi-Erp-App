@@ -1,0 +1,6 @@
+@UnitedDrugsApi_HostAddress = http://localhost:5086
+
+GET {{UnitedDrugsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

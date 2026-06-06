@@ -1,0 +1,40 @@
+{
+  "name": "united-agencies-karachi-erp",
+  "version": "1.0.0",
+  "description": "Desktop ERP for United Agencies Karachi invoicing, inventory, orders, payments, and business intelligence.",
+  "author": "United Agencies Karachi",
+  "main": "main.js",
+  "scripts": {
+    "start": "set ELECTRON_RUN_AS_NODE=&& electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --win nsis"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "com.unitedagencieskarachi.erp",
+    "productName": "United Agencies Karachi ERP",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": ["nsis"],
+      "publisherName": "United Agencies Karachi",
+      "sign": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
